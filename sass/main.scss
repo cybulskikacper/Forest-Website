@@ -1,0 +1,70 @@
+@import './colors';
+@import './components';
+@import './mixins';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1.6em;
+	font-family: 'Raleway', sans-serif;
+	color: $white;
+	background-color: $white;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: $white;
+	z-index: 10;
+
+	&__item {
+		display: flex;
+		position: relative;
+		margin: 0.5em;
+		padding: 0.5em;
+		font-size: 2.3rem;
+		color: $dark;
+		text-decoration: none;
+		transition: transform 0.3s;
+
+		&:hover {
+			background-color: $dark;
+			color: $white;
+		}
+	}
+
+	.forest {
+		display: flex;
+		justify-content: flex-start;
+		flex: 1;
+		font-size: 4rem;
+		color: #000000;
+
+		span {
+			margin-right: 0.75em;
+			color: #414141;
+		}
+	}
+}
+
+@import './small';
+@import './medium';
+@import './large';
