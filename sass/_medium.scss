@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+	.nav {
+		.hamburger {
+			display: none;
+		}
+
+		&__item {
+			display: flex;
+			position: relative;
+			margin: 0.5em;
+			padding: 0.5em;
+			font-size: 2.3rem;
+			color: $dark;
+			text-decoration: none;
+			transition: transform 0.3s;
+
+			&:hover {
+				background-color: $dark;
+				color: $white;
+			}
+		}
+	}
+}
