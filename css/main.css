@@ -37,15 +37,15 @@ body {
 .nav__item {
   display: none;
 }
-
-.forest {
+.nav .forest {
   display: flex;
   justify-content: flex-start;
   flex: 1;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #000000;
+  margin-left: 0.75em;
 }
-.forest span {
+.nav .forest span {
   margin-right: 0.75em;
   color: #414141;
 }
@@ -67,5 +67,12 @@ body {
   .nav__item:hover {
     background-color: #000000;
     color: #fff;
+  }
+  .nav .forest {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    font-size: 3.5rem;
+    color: #000000;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -19,5 +19,13 @@
 				color: $white;
 			}
 		}
+
+		.forest {
+			display: flex;
+			justify-content: flex-start;
+			flex: 1;
+			font-size: 3.5rem;
+			color: #000000;
+		}
 	}
 }

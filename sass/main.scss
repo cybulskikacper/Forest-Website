@@ -41,18 +41,19 @@ body {
 	&__item {
 		display: none;
 	}
-}
 
-.forest {
-	display: flex;
-	justify-content: flex-start;
-	flex: 1;
-	font-size: 2rem;
-	color: #000000;
+	.forest {
+		display: flex;
+		justify-content: flex-start;
+		flex: 1;
+		font-size: 2.5rem;
+		color: #000000;
+		margin-left: 0.75em;
 
-	span {
-		margin-right: 0.75em;
-		color: #414141;
+		span {
+			margin-right: 0.75em;
+			color: #414141;
+		}
 	}
 }
 
