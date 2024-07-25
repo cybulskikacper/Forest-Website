@@ -34,8 +34,20 @@ body {
 .nav .hamburger {
   z-index: 500;
 }
-.nav__item {
+.nav-desktop {
   display: none;
+}
+.nav-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
 }
 .nav .forest {
   display: flex;
@@ -48,31 +60,4 @@ body {
 .nav .forest span {
   margin-right: 0.75em;
   color: #414141;
-}
-
-@media (min-width: 768px) {
-  .nav .hamburger {
-    display: none;
-  }
-  .nav__item {
-    display: flex;
-    position: relative;
-    margin: 0.5em;
-    padding: 0.5em;
-    font-size: 2.3rem;
-    color: #000000;
-    text-decoration: none;
-    transition: transform 0.3s;
-  }
-  .nav__item:hover {
-    background-color: #000000;
-    color: #fff;
-  }
-  .nav .forest {
-    display: flex;
-    justify-content: flex-start;
-    flex: 1;
-    font-size: 3.5rem;
-    color: #000000;
-  }
 }/*# sourceMappingURL=main.css.map */
