@@ -29,68 +29,71 @@ body {
 }
 
 .nav {
-	&-desktop {
-		display: flex;
-	}
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 
-	&-mobile {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-		transform: translateX(102%);
-		transition: transform 0.3s;
-		z-index: 10;
-
-		&--active {
-			transform: translateX(0);
-		}
+	.hamburger {
+		display: none;
 	}
 
 	&__item {
-		font-family: 'Cinzel', sans-serif;
-		position: relative;
-		display: inline-block;
+		display: block;
 		margin: 0.5em;
 		padding: 0.5em;
-		font-size: 3.3rem;
+		font-size: 2.3rem;
 		color: $dark;
 		text-decoration: none;
-		font-weight: 200;
-		text-transform: uppercase;
-		transition: color 0.3s;
+
+		transition: transform 0.3s;
 
 		&:hover {
-			color: $green-hover;
+			background-color: $dark;
+			color: $white;
+		}
+	}
+
+	.forest {
+		display: flex;
+		justify-content: flex-start;
+		flex: 1;
+		font-size: 2.5rem;
+		color: #000000;
+		margin-left: 0.75em;
+
+		span {
+			margin-right: 0.75em;
+			color: #414141;
 		}
 	}
 }
 
-// display: flex;
-// justify-content: space-between;
-// align-items: center;
-// background-color: $white;
-// z-index: 10;
+@media (max-width: 600px) {
+	.nav {
+		&__item {
+			display: none;
+		}
+		.hamburger {
+			display: block;
+		}
+		.nav {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			background-color: $white;
+			z-index: 10;
+			transform: translateX(-102%);
+			transition: transform 0.3s;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
 
-// .forest {
-// 	display: flex;
-// 	justify-content: flex-start;
-// 	flex: 1;
-// 	font-size: 2.5rem;
-// 	color: #000000;
-// 	margin-left: 0.75em;
-
-// 	span {
-// 		margin-right: 0.75em;
-// 		color: #414141;
-// 	}
-// }
-
-@import './small';
-@import './medium';
-@import './large';
+			&.nav--active {
+				transform: translateX(0);
+			}
+		}
+	}
+}
