@@ -1,15 +1,20 @@
-const navMenu = document.querySelector('#nav-menu')
-const navToggle = document.querySelector('#nav-toggle')
-const body = document.body
+const navBtn = document.querySelector('.hamburger') // Przycisk hamburgera
+const navMenu = document.querySelector('#nav-menu') // Nawigacja
+const body = document.body // Ciało dokumentu
 
 const handleNav = () => {
-	navToggle.classList.toggle('is-active')
-	navMenu.classList.toggle('show')
+	// Dodaj lub usuń klasy do przycisku i menu
+	navBtn.classList.toggle('is-active')
+	navMenu.classList.toggle('nav--mobile')
+	navMenu.classList.toggle('nav--active')
 
-	if (navMenu.classList.contains('show')) {
+	// Zablokuj przewijanie, gdy menu jest aktywne
+	if (navMenu.classList.contains('nav--active')) {
 		body.style.overflow = 'hidden'
 	} else {
 		body.style.overflow = 'auto'
 	}
 }
-navToggle.addEventListener('click', handleNav)
+
+// Dodaj nasłuchiwanie kliknięcia na przycisk hamburgera
+navBtn.addEventListener('click', handleNav)

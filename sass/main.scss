@@ -71,12 +71,12 @@ body {
 @media (max-width: 600px) {
 	.nav {
 		&__item {
-			display: none;
+			display: block;
 		}
 		.hamburger {
 			display: block;
 		}
-		.nav {
+		&.nav--mobile {
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -90,10 +90,10 @@ body {
 			left: 0;
 			right: 0;
 			bottom: 0;
+		}
 
-			&.nav--active {
-				transform: translateX(0);
-			}
+		&.nav--active {
+			transform: translateX(0);
 		}
 	}
 }

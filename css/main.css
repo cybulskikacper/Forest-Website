@@ -60,12 +60,12 @@ body {
 
 @media (max-width: 600px) {
   .nav__item {
-    display: none;
+    display: block;
   }
   .nav .hamburger {
     display: block;
   }
-  .nav .nav {
+  .nav.nav--mobile {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +80,7 @@ body {
     right: 0;
     bottom: 0;
   }
-  .nav .nav.nav--active {
+  .nav.nav--active {
     transform: translateX(0);
   }
 }/*# sourceMappingURL=main.css.map */
