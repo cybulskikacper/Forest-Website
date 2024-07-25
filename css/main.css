@@ -24,18 +24,8 @@ body {
   width: 100%;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  z-index: 10;
-}
-.nav .hamburger {
-  z-index: 500;
-}
 .nav-desktop {
-  display: none;
+  display: flex;
 }
 .nav-mobile {
   position: absolute;
@@ -47,17 +37,50 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transform: translateX(102%);
+  transition: transform 0.3s;
   z-index: 10;
 }
-.nav .forest {
-  display: flex;
-  justify-content: flex-start;
-  flex: 1;
-  font-size: 2.5rem;
-  color: #000000;
-  margin-left: 0.75em;
+.nav-mobile--active {
+  transform: translateX(0);
 }
-.nav .forest span {
-  margin-right: 0.75em;
-  color: #414141;
+.nav__item {
+  font-family: "Cinzel", sans-serif;
+  position: relative;
+  display: inline-block;
+  margin: 0.5em;
+  padding: 0.5em;
+  font-size: 3.3rem;
+  color: #000000;
+  text-decoration: none;
+  font-weight: 200;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+.nav__item:hover {
+  color: #1fea00;
+}
+
+@media (min-width: 768px) {
+  .nav__item {
+    display: flex;
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em;
+    font-size: 2.3rem;
+    color: #000000;
+    text-decoration: none;
+    transition: transform 0.3s;
+  }
+  .nav__item:hover {
+    background-color: #000000;
+    color: #fff;
+  }
+  .nav .forest {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    font-size: 3.5rem;
+    color: #000000;
+  }
 }/*# sourceMappingURL=main.css.map */
