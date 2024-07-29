@@ -22,6 +22,17 @@ body {
 	background-color: $white;
 }
 
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+	background-color: white;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+	background-color: white;
+}
 .wrapper {
 	margin: 0 auto;
 	max-width: 1200px;
