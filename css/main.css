@@ -23,64 +23,90 @@ body {
   max-width: 1200px;
   width: 100%;
 }
-
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.nav .hamburger {
+.wrapper .hamburger {
   display: none;
 }
+
+.nav-desktop {
+  display: none;
+}
+.nav-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateX(-102%);
+  background-color: #fff;
+  z-index: 10;
+}
+.nav-mobile--active {
+  transform: translateX(0);
+}
 .nav__item {
+  position: relative;
   display: block;
   margin: 0.5em;
   padding: 0.5em;
-  font-size: 2.3rem;
-  color: #000000;
+  font-size: 2.1rem;
   text-decoration: none;
-  transition: transform 0.3s;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 .nav__item:hover {
-  background-color: #000000;
-  color: #fff;
-}
-.nav .forest {
-  display: flex;
-  justify-content: flex-start;
-  flex: 1;
-  font-size: 2.5rem;
-  color: #000000;
-  margin-left: 0.75em;
-}
-.nav .forest span {
-  margin-right: 0.75em;
-  color: #414141;
+  color: #1fea00;
 }
 
-@media (max-width: 600px) {
-  .nav__item {
-    display: block;
-  }
-  .nav .hamburger {
-    display: block;
-  }
-  .nav.nav--mobile {
+@media (min-width: 576px) {
+  .nav-desktop {
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: #fff;
-    z-index: 10;
-    transform: translateX(-102%);
-    transition: transform 0.3s;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    justify-content: center;
+    flex-direction: row;
   }
-  .nav.nav--active {
-    transform: translateX(0);
+  .nav-desktop__item {
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em;
+    font-size: 2rem;
+    color: #000000;
+    text-decoration: none;
+    transition: transform 0.3s;
+  }
+  .nav-desktop__item:hover {
+    background-color: #000000;
+    color: #fff;
+  }
+  .nav-desktop .forest {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    font-size: 2.9rem;
+    color: #000000;
+  }
+  .nav-desktop .forest span {
+    display: flex;
+    margin-right: 0.3em;
+  }
+}
+@media (max-width: 575px) {
+  .wrapper {
+    background-color: red;
+  }
+  .wrapper .hamburger {
+    display: flex;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    z-index: 500;
+  }
+  .wrapper .hamburger-inner, .wrapper .hamburger-inner::after, .wrapper .hamburger-inner::before {
+    z-index: 500;
   }
 }/*# sourceMappingURL=main.css.map */
