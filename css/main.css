@@ -63,7 +63,30 @@ body {
   color: #1fea00;
 }
 
-@media (min-width: 576px) {
+.header {
+  background-image: url("/img/jungle-small.jpg");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  opacity: 10;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+.header__text {
+  font-size: 4rem;
+}
+
+@media (min-width: 768px) {
+  .nav-mobile {
+    display: none;
+  }
   .nav-desktop {
     display: flex;
     align-items: center;
@@ -74,7 +97,7 @@ body {
     position: relative;
     margin: 0.5em;
     padding: 0.5em;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #000000;
     text-decoration: none;
     transition: transform 0.3s;
@@ -87,7 +110,7 @@ body {
     display: flex;
     justify-content: flex-start;
     flex: 1;
-    font-size: 2.9rem;
+    font-size: 2.5rem;
     color: #000000;
   }
   .nav-desktop .forest span {
@@ -95,10 +118,7 @@ body {
     margin-right: 0.3em;
   }
 }
-@media (max-width: 575px) {
-  .wrapper {
-    background-color: red;
-  }
+@media (max-width: 767px) {
   .wrapper .hamburger {
     display: flex;
     position: absolute;
