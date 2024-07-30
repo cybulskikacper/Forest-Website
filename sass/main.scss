@@ -33,6 +33,21 @@ body {
 .hamburger-inner::after {
 	background-color: white;
 }
+
+.section-heading {
+	position: relative;
+	margin-bottom: 2em;
+	font-size: 3rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.section-padding {
+	padding: 3em 2em;
+}
+
 .wrapper {
 	margin: 0 auto;
 	max-width: 1200px;
@@ -83,6 +98,7 @@ body {
 
 		&:hover {
 			color: #1fea00;
+			background-color: black;
 		}
 	}
 }
@@ -127,6 +143,10 @@ body {
 	z-index: 2;
 	margin-bottom: 0.2em;
 	text-align: start;
+}
+
+section {
+	color: black;
 }
 
 @import './small';
