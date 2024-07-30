@@ -1,11 +1,20 @@
 @media (min-width: 992px) {
 	.nav {
 		.forest {
-			font-size: 3.5rem;
+			font-size: 2.9rem;
 		}
 
 		&__item {
-			font-size: 3rem;
+			font-size: 2.5rem;
+		}
+	}
+
+	.header {
+		&__text {
+			font-size: 4.5rem;
+		}
+		&__heading {
+			font-size: 6.1rem;
 		}
 	}
 }

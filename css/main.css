@@ -108,7 +108,7 @@ body {
 .header__heading {
   position: relative;
   font-weight: 500;
-  font-size: 4.5rem;
+  font-size: 4.2rem;
   z-index: 2;
 }
 
@@ -123,9 +123,10 @@ body {
 @media (min-width: 576px) {
   .nav-desktop .forest {
     margin-left: 0.8em;
+    font-size: 5rem;
   }
   .nav__item {
-    font-size: 1.6em;
+    font-size: 1.6rem;
   }
   .header {
     padding: 10em;
@@ -161,7 +162,7 @@ body {
     display: flex;
     justify-content: flex-start;
     flex: 1;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
     color: #000000;
   }
   .nav-desktop .forest span {
@@ -170,6 +171,9 @@ body {
   }
   .header {
     background-image: url("/img/jungle-big.jpg");
+  }
+  .header__text {
+    font-size: 3.2rem;
   }
 }
 @media (max-width: 767px) {
@@ -186,9 +190,15 @@ body {
 }
 @media (min-width: 992px) {
   .nav .forest {
-    font-size: 3.5rem;
+    font-size: 2.9rem;
   }
   .nav__item {
-    font-size: 3rem;
+    font-size: 2.5rem;
+  }
+  .header__text {
+    font-size: 4.5rem;
+  }
+  .header__heading {
+    font-size: 6.1rem;
   }
 }/*# sourceMappingURL=main.css.map */
