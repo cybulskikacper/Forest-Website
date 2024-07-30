@@ -1,7 +1,14 @@
 @media (min-width: 992px) {
+	.nav {
+		.forest {
+			font-size: 3.5rem;
+		}
 
+		&__item {
+			font-size: 3rem;
+		}
+	}
 }
 
 @media (min-width: 1200px) {
-    
 }

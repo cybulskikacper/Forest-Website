@@ -1,4 +1,22 @@
 @media (min-width: 576px) {
+	.nav {
+		&-desktop {
+			.forest {
+				margin-left: 0.8em;
+			}
+		}
+		&__item {
+			font-size: 1.6em;
+		}
 
+		&-mobile {
+		}
+	}
+
+	.header {
+		padding: 10em;
+		&__text {
+			font-size: 2rem;
+		}
+	}
 }
-
