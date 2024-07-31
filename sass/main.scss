@@ -22,42 +22,6 @@ body {
 	background-color: $white;
 }
 
-.hamburger.is-active .hamburger-inner,
-.hamburger.is-active .hamburger-inner::before,
-.hamburger.is-active .hamburger-inner::after {
-	background-color: #000000;
-}
-
-.hamburger-inner,
-.hamburger-inner::before,
-.hamburger-inner::after {
-	background-color: white;
-}
-
-.section-heading {
-	position: relative;
-	margin-bottom: 2em;
-	font-size: 3rem;
-	font-weight: 300;
-	text-transform: uppercase;
-	text-align: center;
-	letter-spacing: 2px;
-}
-
-.section-padding {
-	padding: 3em 2em;
-}
-
-.wrapper {
-	margin: 0 auto;
-	max-width: 1200px;
-	width: 100%;
-
-	.hamburger {
-		display: none;
-	}
-}
-
 .nav {
 	&-desktop {
 		display: none;
@@ -145,8 +109,38 @@ body {
 	text-align: start;
 }
 
-section {
+.section {
 	color: black;
+	.about {
+		&__box {
+			display: flex;
+
+			&-img {
+				flex: 1;
+				padding: 0 4em;
+
+				.about__img {
+					width: 400px;
+					height: 270px;
+					object-fit: cover;
+					transition: transform 0.3s;
+
+					&:hover {
+						transform: scale(1.05);
+					}
+				}
+			}
+			&-text {
+				padding: 1.5em;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				text-align: left;
+			
+			}
+		}
+	}
 }
 
 @import './small';

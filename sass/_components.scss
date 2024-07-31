@@ -1,1 +1,37 @@
-@use './colors' as *;
+@import './colors';
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+	background-color: #000000;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+	background-color: white;
+}
+
+.section-heading {
+	position: relative;
+	margin-bottom: 0.5em;
+	font-size: 3rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.section-padding {
+	padding: 1.3em 2em;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+
+	.hamburger {
+		display: none;
+	}
+}
