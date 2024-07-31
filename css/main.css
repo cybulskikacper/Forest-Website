@@ -138,30 +138,13 @@ body {
 .section {
   color: black;
 }
-.section .about__box {
+.section .about {
+  color: black;
   display: flex;
-}
-.section .about__box-img {
-  flex: 1;
-  padding: 0 4em;
 }
 .section .about__box-img .about__img {
-  width: 400px;
-  height: 270px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: transform 0.3s;
-}
-.section .about__box-img .about__img:hover {
-  transform: scale(1.05);
-}
-.section .about__box-text {
-  padding: 1.5em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
+  width: 100px;
+  height: 100px;
 }
 
 @media (min-width: 576px) {
