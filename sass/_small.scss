@@ -17,4 +17,22 @@
 			font-size: 2rem;
 		}
 	}
+
+	.section {
+		.about {
+			&__box {
+				flex-direction: row;
+				justify-content: space-between;
+				text-align: left;
+				&-text {
+					margin-left: 0.1em;
+					width: 55%;
+				}
+
+				&-img {
+					width: 40%;
+				}
+			}
+		}
+	}
 }

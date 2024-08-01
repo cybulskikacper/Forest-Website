@@ -112,15 +112,30 @@ body {
 .section {
 	color: black;
 	.about {
-		color: black;
-		display: flex;
+		font-weight: 300;
+		&-heading {
+			font-size: 3rem;
+			font-weight: 400;
+			margin-bottom: 2em;
+			text-transform: uppercase;
+		}
 		&__box {
-			&-img {
-				.about__img {
-					width: 100px;
-					height: 100px;
-				}
-			}
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__img {
+			width: 100%;
+		}
+
+		&__title {
+			font-size: 2.2rem;
+			margin-bottom: 1em;
+		}
+
+		&__text {
+			font-size: 1.6rem;
+			font-weight: 600;
 		}
 	}
 }
