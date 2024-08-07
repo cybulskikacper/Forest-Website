@@ -17,6 +17,15 @@
 			font-size: 6.1rem;
 		}
 	}
+
+	.section {
+		.adventure {
+			&__box {
+				background-image: url('../img/girl-big.jpg');
+				padding: 7em 6em;
+			}
+		}
+	}
 }
 
 @media (min-width: 1200px) {

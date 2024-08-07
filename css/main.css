@@ -160,6 +160,34 @@ body {
   font-size: 1.6rem;
   font-weight: 600;
 }
+.section .adventure__box {
+  position: relative;
+  background-image: url("../img/girl-small.jpg");
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 5em 6em;
+  text-align: center;
+}
+.section .adventure__box ::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.section .adventure__title {
+  position: relative;
+  color: #fff;
+  font-size: 4.5rem;
+  font-weight: 300;
+  text-wrap: nowrap;
+  z-index: 2;
+}
 
 @media (min-width: 576px) {
   .nav-desktop .forest {
@@ -253,5 +281,9 @@ body {
   }
   .header__heading {
     font-size: 6.1rem;
+  }
+  .section .adventure__box {
+    background-image: url("../img/girl-big.jpg");
+    padding: 7em 6em;
   }
 }/*# sourceMappingURL=main.css.map */
