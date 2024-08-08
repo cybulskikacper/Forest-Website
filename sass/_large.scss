@@ -29,4 +29,16 @@
 }
 
 @media (min-width: 1200px) {
+	.section {
+		.adventure {
+			&__box {
+				padding: 7em 6em;
+			}
+
+			&__title {
+				font-size: 5.5rem;
+				padding: 1em 3em;
+			}
+		}
+	}
 }
