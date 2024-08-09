@@ -192,11 +192,8 @@ body {
   border: solid;
   padding: 0.7em 2em;
 }
-.section .offer__offer {
-  display: flex;
-}
-.section .offer__offer-one {
-  background-color: red;
+.section .offer__offers {
+  padding: 2em 5em;
 }
 .section .offer-heading {
   text-transform: uppercase;
@@ -209,6 +206,19 @@ body {
   font-size: 2.3rem;
   margin-bottom: 2em;
   text-align: center;
+}
+.section .offer__title {
+  font-weight: 400;
+}
+.section .offer__price {
+  font-size: 4rem;
+}
+.section .offer-icons {
+  margin-top: 0.5em;
+}
+.section .offer__choose {
+  padding: 0.2em 5em;
+  background-color: white;
 }
 
 @media (min-width: 576px) {
