@@ -180,8 +180,8 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Darken the image with a semi-transparent black overlay */
-  z-index: 1; /* Place the overlay under the text */
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 .section .adventure__title {
   position: relative;
@@ -192,12 +192,49 @@ body {
   border: solid;
   padding: 0.7em 2em;
 }
-.section .offer__offers {
-  padding: 2em 1em;
-  border: 1px solid #e0e0e0;
-  border-radius: 10px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
+.section .offer__cards {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin: 1em 0;
+  height: 450px;
+  transition: transform 0.3s ease;
+}
+.section .offer__cards:hover {
+  transform: scale(1.03);
+}
+.section .offer__card {
+  display: flex;
+  justify-content: center;
+}
+.section .offer__card--first {
+  padding: 2em;
+  height: 100%;
+  border-radius: 8px;
+  background-color: rebeccapurple;
+}
+.section .offer__card--second {
+  padding: 2em;
+  height: 100%;
+  border-radius: 8px;
+  background-color: rgb(99, 96, 65);
+}
+.section .offer__card--third {
+  padding: 2em;
+  height: 100%;
+  border-radius: 8px;
+  background-color: rgb(62, 103, 78);
+}
+.section .offer__card-title {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 0.9em;
+}
+.section .offer__card-price {
+  font-size: 3rem;
+  margin-top: 0.2em;
 }
 .section .offer-heading {
   text-transform: uppercase;
@@ -211,18 +248,8 @@ body {
   margin-bottom: 2em;
   text-align: center;
 }
-.section .offer__title {
-  font-weight: 400;
-}
-.section .offer__price {
-  font-size: 4rem;
-  margin-top: 0.2em;
-}
-.section .offer-icons {
-  margin-top: 0.5em;
-}
 .section .offer__choose {
-  padding: 0.7em 4.5em;
+  padding: 0.7em 4.2em;
   font-size: 1.5rem;
   background-color: white;
   border-radius: 5px;
@@ -232,16 +259,24 @@ body {
   font-weight: 300;
   cursor: pointer;
 }
-.section .offer__choose-green {
-  padding: 0.7em 4.5em;
-  font-size: 1.5rem;
+.section .offer .green {
   background-color: #2bde71;
-  border-radius: 5px;
-  border: solid #e0e0e0;
-  box-shadow: 3px 3px 7px 0px #e0e0e0;
-  margin-top: 1.2em;
-  font-weight: 300;
-  cursor: pointer;
+}
+.section .options {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5em;
+}
+.section .option {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+}
+.section img {
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (min-width: 576px) {

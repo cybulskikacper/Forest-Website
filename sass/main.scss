@@ -159,8 +159,8 @@ body {
 				left: 0;
 				width: 100%;
 				height: 100%;
-				background-color: rgba(0, 0, 0, 0.5); /* Darken the image with a semi-transparent black overlay */
-				z-index: 1; /* Place the overlay under the text */
+				background-color: rgba(0, 0, 0, 0.5);
+				z-index: 1;
 			}
 		}
 
@@ -176,12 +176,55 @@ body {
 	}
 
 	.offer {
-		&__offers {
-			padding: 2em 1em;
-			border: 1px solid #e0e0e0;
-			border-radius: 10px;
-			box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-			text-align: center;
+		&__cards {
+			display: flex;
+			justify-content: center;
+			flex-direction: column;
+			position: relative;
+			margin: 1em 0;
+			height: 450px;
+
+			transition: transform 0.3s ease;
+
+			&:hover {
+				transform: scale(1.03);
+			}
+		}
+
+		&__card {
+			display: flex;
+			justify-content: center;
+			&--first {
+				padding: 2em;
+				height: 100%;
+				border-radius: 8px;
+				background-color: rebeccapurple;
+			}
+
+			&--second {
+				padding: 2em;
+				height: 100%;
+				border-radius: 8px;
+				background-color: rgb(99, 96, 65);
+			}
+
+			&--third {
+				padding: 2em;
+				height: 100%;
+				border-radius: 8px;
+				background-color: rgb(62, 103, 78);
+			}
+			&-title {
+				text-transform: uppercase;
+				font-size: 2.5rem;
+				font-weight: 400;
+				margin-bottom: 0.9em;
+			}
+
+			&-price {
+				font-size: 3rem;
+				margin-top: 0.2em;
+			}
 		}
 
 		&-heading {
@@ -198,21 +241,8 @@ body {
 			text-align: center;
 		}
 
-		&__title {
-			font-weight: 400;
-		}
-
-		&__price {
-			font-size: 4rem;
-			margin-top: 0.2em;
-		}
-
-		&-icons {
-			margin-top: 0.5em;
-		}
-
 		&__choose {
-			padding: 0.7em 4.5em;
+			padding: 0.7em 4.2em;
 			font-size: 1.5rem;
 			background-color: white;
 			border-radius: 5px;
@@ -223,17 +253,28 @@ body {
 			cursor: pointer;
 		}
 
-		&__choose-green {
-			padding: 0.7em 4.5em;
-			font-size: 1.5rem;
+		.green {
 			background-color: #2bde71;
-			border-radius: 5px;
-			border: solid #e0e0e0;
-			box-shadow: 3px 3px 7px 0px #e0e0e0;
-			margin-top: 1.2em;
-			font-weight: 300;
-			cursor: pointer;
 		}
+	}
+
+	.options {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 0.5em;
+	}
+
+	.option {
+		font-size: 1.3rem;
+		line-height: 1.3rem;
+	}
+
+	img {
+		background-color: yellow;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 	}
 }
 
