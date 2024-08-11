@@ -262,19 +262,18 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		margin-bottom: 0.5em;
 	}
 
 	.option {
 		font-size: 1.3rem;
 		line-height: 1.3rem;
+		text-align: center;
+		margin-top: 0.5em;
 	}
 
 	img {
-		background-color: yellow;
 		display: flex;
-		align-items: center;
-		justify-content: center;
+		margin-right: 0.5em;
 	}
 }
 
