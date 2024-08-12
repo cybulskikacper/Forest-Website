@@ -258,22 +258,20 @@ body {
 		}
 	}
 
-	.options {
-		display: flex;
-		align-items: center;
-		justify-content: center;
+	.card-icons {
+		// display: flex;
+		// flex-direction: column;
+
+		.options {
+			display: flex;
+			align-items: center;
+		}
 	}
 
 	.option {
 		font-size: 1.3rem;
-		line-height: 1.3rem;
-		text-align: center;
-		margin-top: 0.5em;
-	}
-
-	img {
-		display: flex;
-		margin-right: 0.5em;
+		text-wrap: nowrap;
+		margin-left: 0.7em;
 	}
 }
 

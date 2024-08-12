@@ -262,20 +262,14 @@ body {
 .section .offer .green {
   background-color: #2bde71;
 }
-.section .options {
+.section .card-icons .options {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .section .option {
   font-size: 1.3rem;
-  line-height: 1.3rem;
-  text-align: center;
-  margin-top: 0.5em;
-}
-.section img {
-  display: flex;
-  margin-right: 0.5em;
+  text-wrap: nowrap;
+  margin-left: 0.7em;
 }
 
 @media (min-width: 576px) {
