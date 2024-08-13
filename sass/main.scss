@@ -174,104 +174,70 @@ body {
 			padding: 0.7em 2em;
 		}
 	}
+}
 
-	.offer {
-		&__cards {
-			display: flex;
-			justify-content: center;
-			flex-direction: column;
-			position: relative;
-			margin: 1em 0;
-			height: 450px;
+.offers {
+	.section-heading {
+		font-size: 3.5rem;
+		text-transform: uppercase;
+	}
 
-			transition: transform 0.3s ease;
+	&__card {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		position: relative;
+		margin: 1em 0;
+		text-align: center;
+		height: 450px;
 
-			&:hover {
-				transform: scale(1.03);
-			}
-		}
+		&-items {
+			padding: 2em;
+			height: 370px;
+			border-radius: 8px;
+			border: solid #e0e0e0;
+			box-shadow: 3px 3px 7px 0px #e0e0e0;
 
-		&__card {
-			display: flex;
-			justify-content: center;
-			&--first {
-				padding: 2em;
-				height: 100%;
-				border-radius: 8px;
-				background-color: rebeccapurple;
-			}
-
-			&--second {
-				padding: 2em;
-				height: 100%;
-				border-radius: 8px;
-				background-color: rgb(99, 96, 65);
-			}
-
-			&--third {
-				padding: 2em;
-				height: 100%;
-				border-radius: 8px;
-				background-color: rgb(62, 103, 78);
-			}
 			&-title {
+				font-size: 3.8rem;
+				margin-bottom: 0.5em;
 				text-transform: uppercase;
-				font-size: 2.5rem;
-				font-weight: 400;
-				margin-bottom: 0.9em;
 			}
 
 			&-price {
-				font-size: 3rem;
-				margin-top: 0.2em;
+				font-size: 3.5rem;
+				margin-bottom: 0.5em;
 			}
 		}
-
-		&-heading {
-			text-transform: uppercase;
-			font-size: 3.5rem;
-			font-weight: 400;
-			margin-bottom: 0.9em;
+		&-info {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
 		}
 
-		&__text {
-			font-weight: 400;
-			font-size: 2.3rem;
-			margin-bottom: 2em;
-			text-align: center;
+		&-option {
+			display: flex;
+			align-items: center;
+			text-wrap: nowrap;
+			font-size: 2rem;
 		}
 
-		&__choose {
+		&-btn {
+			font-weight: 300;
+			margin-top: 1.2em;
 			padding: 0.7em 4.2em;
 			font-size: 1.5rem;
 			background-color: white;
-			border-radius: 5px;
 			border: solid #e0e0e0;
 			box-shadow: 3px 3px 7px 0px #e0e0e0;
-			margin-top: 1.2em;
-			font-weight: 300;
+			border-radius: 5px;
 			cursor: pointer;
 		}
 
-		.green {
+		.offers__card-items--second .offers__card-btn {
 			background-color: #2bde71;
 		}
-	}
-
-	.card-icons {
-		// display: flex;
-		// flex-direction: column;
-
-		.options {
-			display: flex;
-			align-items: center;
-		}
-	}
-
-	.option {
-		font-size: 1.3rem;
-		text-wrap: nowrap;
-		margin-left: 0.7em;
 	}
 }
 
