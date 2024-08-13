@@ -180,6 +180,7 @@ body {
 	.section-heading {
 		font-size: 3.5rem;
 		text-transform: uppercase;
+		font-weight: 400;
 	}
 
 	&__card {
@@ -197,6 +198,11 @@ body {
 			border-radius: 8px;
 			border: solid #e0e0e0;
 			box-shadow: 3px 3px 7px 0px #e0e0e0;
+			transition: transform 0.3s ease;
+
+			&:hover {
+				transform: scale(1.2);
+			}
 
 			&-title {
 				font-size: 3.8rem;

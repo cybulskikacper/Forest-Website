@@ -196,6 +196,7 @@ body {
 .offers .section-heading {
   font-size: 3.5rem;
   text-transform: uppercase;
+  font-weight: 400;
 }
 .offers__card {
   display: flex;
@@ -212,6 +213,10 @@ body {
   border-radius: 8px;
   border: solid #e0e0e0;
   box-shadow: 3px 3px 7px 0px #e0e0e0;
+  transition: transform 0.3s ease;
+}
+.offers__card-items:hover {
+  transform: scale(1.2);
 }
 .offers__card-items-title {
   font-size: 3.8rem;
