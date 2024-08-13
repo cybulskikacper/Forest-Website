@@ -219,12 +219,12 @@ body {
   transform: scale(1.2);
 }
 .offers__card-items-title {
-  font-size: 3.8rem;
+  font-size: 2.8rem;
   margin-bottom: 0.5em;
   text-transform: uppercase;
 }
 .offers__card-items-price {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   margin-bottom: 0.5em;
 }
 .offers__card-info {
@@ -236,8 +236,19 @@ body {
 .offers__card-option {
   display: flex;
   align-items: center;
-  text-wrap: nowrap;
-  font-size: 2rem;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+.offers__card-option-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-right: 1.85em;
+}
+.offers__card img {
+  background-color: yellow;
+  margin-right: 0.5em;
 }
 .offers__card-btn {
   font-weight: 300;
