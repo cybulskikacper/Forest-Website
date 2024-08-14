@@ -70,6 +70,40 @@
 			}
 		}
 	}
+
+	.footer {
+		margin-top: 0px;
+
+		&__boxes {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__box-desktop {
+			display: block;
+		}
+
+		&__box {
+			margin: 0 2em;
+		}
+
+		&__box-title {
+			font-size: 2.6rem;
+			margin-bottom: 0.5em;
+		}
+
+		&__box-list {
+			list-style: none;
+		}
+		&__box-list-item {
+			margin-bottom: 1em;
+
+			a {
+				color: #333;
+				text-decoration: none;
+			}
+		}
+	}
 }
 
 @media (max-width: 767px) {

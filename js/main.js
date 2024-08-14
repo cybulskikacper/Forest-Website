@@ -7,4 +7,10 @@ const handleNav = () => {
 	navMobile.classList.toggle('nav-mobile--active')
 }
 
+const handleCurrentYear = () => {
+	const year = new Date().getFullYear()
+	footerYear.innerText = year
+}
+handleCurrentYear()
+
 navBtn.addEventListener('click', handleNav)

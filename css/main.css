@@ -268,7 +268,37 @@ body {
 }
 
 .footer {
-  background-color: tan;
+  margin-top: 600px;
+  color: #333;
+  background-color: #f5f5f5;
+}
+.footer .wrapper {
+  padding: 3em 2em 2em;
+}
+.footer__box {
+  font-size: 1.4rem;
+  display: flex;
+}
+.footer__box-desktop {
+  display: none;
+}
+.footer__box-title-main {
+  font-size: 4rem;
+  margin-bottom: 2.3em;
+}
+.footer__box-title-main .fa-solid {
+  margin-right: 0.3em;
+}
+.footer__box-title {
+  font-size: 3rem;
+}
+.footer__bottom-text {
+  text-align: center;
+  font-size: 1.3rem;
+  padding: 2rem;
+}
+.footer__year {
+  margin-right: 0.5em;
 }
 
 @media (min-width: 576px) {
@@ -354,6 +384,33 @@ body {
   }
   .offers__card-items:hover {
     transform: scale(1.2);
+  }
+  .footer {
+    margin-top: 0px;
+  }
+  .footer__boxes {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__box-desktop {
+    display: block;
+  }
+  .footer__box {
+    margin: 0 2em;
+  }
+  .footer__box-title {
+    font-size: 2.6rem;
+    margin-bottom: 0.5em;
+  }
+  .footer__box-list {
+    list-style: none;
+  }
+  .footer__box-list-item {
+    margin-bottom: 1em;
+  }
+  .footer__box-list-item a {
+    color: #333;
+    text-decoration: none;
   }
 }
 @media (max-width: 767px) {

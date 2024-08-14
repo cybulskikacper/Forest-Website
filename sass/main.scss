@@ -266,7 +266,45 @@ body {
 // FOOTER
 
 .footer {
-	background-color: tan;
+	margin-top: 600px;
+	color: #333;
+	background-color: #f5f5f5;
+
+	.wrapper {
+		padding: 3em 2em 2em;
+	}
+
+	&__box {
+		font-size: 1.4rem;
+		display: flex;
+	}
+
+	&__box-desktop {
+		display: none;
+	}
+
+	&__box-title-main {
+		font-size: 4rem;
+		margin-bottom: 2.3em;
+
+		.fa-solid {
+			margin-right: 0.3em;
+		}
+	}
+
+	&__box-title {
+		font-size: 3rem;
+	}
+
+	&__bottom-text {
+		text-align: center;
+		font-size: 1.3rem;
+		padding: 2rem;
+	}
+
+	&__year {
+		margin-right: 0.5em;
+	}
 }
 
 @import './small';
