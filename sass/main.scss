@@ -80,6 +80,10 @@ body {
 		&:hover::after {
 			height: 100%;
 		}
+
+		.active {
+			background-color: yellow;
+		}
 	}
 }
 

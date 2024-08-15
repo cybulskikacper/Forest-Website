@@ -103,6 +103,9 @@ body {
 .nav__item:hover::after {
   height: 100%;
 }
+.nav__item .active {
+  background-color: yellow;
+}
 
 .header {
   position: relative;
