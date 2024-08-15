@@ -58,11 +58,27 @@ body {
 		color: $dark;
 		text-transform: uppercase;
 		text-decoration: none;
-		transition: color 0.3s;
+		transition: color 0.3s ease;
+		z-index: 0;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 0;
+			width: 100%;
+			background-color: black;
+			transition: height 0.5s ease;
+			z-index: -1;
+		}
 
 		&:hover {
-			color: #1fea00;
-			background-color: black;
+			color: white;
+		}
+
+		&:hover::after {
+			height: 100%;
 		}
 	}
 }
