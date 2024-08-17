@@ -33,26 +33,27 @@ navItems.forEach(item => {
 })
 
 const handleScrollSpy = () => {
-    scrollSpySections.forEach(section => {
-        const sectionTop = section.offsetTop
-        const sectionHeight = section.offsetHeight
-        const scrollPos = window.scrollY
+	scrollSpySections.forEach(section => {
+		const sectionTop = section.offsetTop
+		const sectionHeight = section.offsetHeight
+		const scrollPos = window.scrollY + 1
 
-        if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
-            const activeSection = document.querySelector(`[href*="${section.id}"]`)
+		if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight - 50.5) {
+			const activeSection = document.querySelector(`[href*="${section.id}"]`)
 
-            console.log(`Sekcja: ${section.id}, znaleziony link: ${activeSection}`); // Dodaj to
+			navItems.forEach(item => item.classList.remove('is-active'))
 
-            navItems.forEach(item => item.classList.remove('is-active'))
-            if (activeSection) {
-                activeSection.classList.add('is-active')
-            } else {
-                console.warn(`Nie znaleziono linku nawigacyjnego dla sekcji z id: ${section.id}`)
-            }
-        }
-    })
+			activeSection.classList.add('is-active')
+		}
+	})
+	if (window.scrollY <= 20) {
+		const firstSection = document.querySelector('a:first-of-type')
+
+		navItems.forEach(item => item.classList.remove('is-active'))
+
+		firstSection.classList.add('is-active')
+	}
 }
-
 
 navBtn.addEventListener('click', handleNav)
 window.addEventListener('scroll', handleScrollSpy)

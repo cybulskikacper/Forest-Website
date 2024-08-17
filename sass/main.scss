@@ -73,12 +73,13 @@ body {
 			z-index: -1;
 		}
 
-		&:hover {
+		&:hover,
+		&.is-active {
 			color: white;
-		}
 
-		&:hover::after {
-			height: 100%;
+			&::after {
+				height: 100%;
+			}
 		}
 
 		.active {
@@ -158,7 +159,9 @@ body {
 			font-weight: 600;
 		}
 	}
+}
 
+.check {
 	.adventure {
 		&__box {
 			position: relative;
@@ -195,7 +198,6 @@ body {
 		}
 	}
 }
-
 .offers {
 	.section-heading {
 		font-size: 3.5rem;

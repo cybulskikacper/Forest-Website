@@ -18,7 +18,7 @@
 		}
 	}
 
-	.section {
+	.check {
 		.adventure {
 			&__box {
 				background-image: url('../img/girl-big.jpg');
@@ -29,7 +29,7 @@
 }
 
 @media (min-width: 1200px) {
-	.section {
+	.check {
 		.adventure {
 			&__box {
 				padding: 7em 6em;
