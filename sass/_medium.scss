@@ -62,11 +62,17 @@
 			justify-content: center;
 			flex-direction: row;
 			gap: 25px;
-
 			&-items {
 				&:hover {
 					transform: scale(1.2);
 				}
+			}
+
+			&-full {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
 			}
 		}
 	}
