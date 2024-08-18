@@ -404,13 +404,28 @@ body {
   background: none;
   font-weight: bold;
   cursor: pointer;
-  padding: 3em 2em;
   transition: background-color 0.3s, color 0.3s;
 }
 .contact__form-btn:hover, .contact__form-btn:focus {
   outline: none;
   color: #fff;
   background-color: #414141;
+}
+
+.map {
+  font-size: 4rem;
+  font-weight: 300;
+  color: black;
+  text-transform: uppercase;
+}
+.map__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.map .contact-page .footer {
+  background-color: red;
 }
 
 @media (min-width: 576px) {
@@ -458,9 +473,6 @@ body {
   }
   .contact-page .header {
     display: none;
-  }
-  .contact-page .footer {
-    margin-top: 415px;
   }
   .contact-page .contact__form {
     gap: 30px;
