@@ -33,6 +33,10 @@ navItems.forEach(item => {
 })
 
 const handleScrollSpy = () => {
+	if (document.body.classList.contains('offer-page') || document.body.classList.contains('contact-page')) {
+		return
+	}
+
 	scrollSpySections.forEach(section => {
 		const sectionTop = section.offsetTop
 		const sectionHeight = section.offsetHeight
