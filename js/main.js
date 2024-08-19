@@ -74,6 +74,6 @@ const handleFormSubmit = e => {
 	}, 5000)
 }
 
-form.addEventListener('submit', handleFormSubmit)
 navBtn.addEventListener('click', handleNav)
 window.addEventListener('scroll', handleScrollSpy)
+form.addEventListener('submit', handleFormSubmit)
