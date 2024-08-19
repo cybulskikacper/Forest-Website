@@ -41,4 +41,13 @@
 			}
 		}
 	}
+
+	.map {
+		&__box {
+			iframe {
+				width: 100%;
+				height: 800px;
+			}
+		}
+	}
 }
