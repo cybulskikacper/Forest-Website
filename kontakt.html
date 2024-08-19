@@ -54,27 +54,32 @@
 
         <div class="wrapper">
             <h2 class="section-title">Skontaktuj się z nami</h2>
+
             <form class="contact__form">
                 <div class="contact__form-box">
                     <label for="name">Imię:</label>
-                    <input type="text" id="name">
+                    <input type="text" id="name" required>
                 </div>
                 <div class="contact__form-box">
 
                     <label for="surrname">Nazwisko:</label>
-                    <input type="text" id="surrname">
+                    <input type="text" id="surrname" required>
                 </div>
                 <div class="contact__form-box">
                     <label for="mail">Email:</label>
-                    <input type="email" id="mail">
+                    <input type="email" id="mail" required>
                 </div>
                 <div class="contact__form-box">
                     <label for="msg">Wiadomość</label>
-                    <textarea id="msg"></textarea>
+                    <textarea id="msg" required></textarea>
                 </div>
                 <button type="submit" class="contact__form-btn">Wyślij</button>
+                <p class="contact__form-success">Mail został wysłany poprawnie</p>
             </form>
         </div>
+
+
+
 
     </section>
 

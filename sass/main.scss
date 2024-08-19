@@ -419,6 +419,14 @@ body {
 		}
 	}
 
+	&__form-success {
+		grid-column: 1/-1;
+		grid-row: 6/7;
+		font-size: 4rem;
+		color: green;
+		display: none;
+	}
+
 	&__form-btn {
 		grid-column: 1/3;
 		grid-row: 5/6;

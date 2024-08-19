@@ -7,6 +7,9 @@ const scrollSpySections = document.querySelectorAll('.section')
 const footerYear = document.querySelector('.footer__year')
 const body = document.body
 
+const form = document.querySelector('.contact__form')
+const successMessage = document.querySelector('.contact__form-success')
+
 const handleNav = () => {
 	navBtn.classList.toggle('is-active')
 	navMobile.classList.toggle('nav-mobile--active')
@@ -59,5 +62,18 @@ const handleScrollSpy = () => {
 	}
 }
 
+const handleFormSubmit = e => {
+	e.preventDefault()
+
+	form.reset()
+
+	successMessage.style.display = 'block'
+
+	setTimeout(() => {
+		successMessage.style.display = 'none'
+	}, 5000)
+}
+
+form.addEventListener('submit', handleFormSubmit)
 navBtn.addEventListener('click', handleNav)
 window.addEventListener('scroll', handleScrollSpy)
