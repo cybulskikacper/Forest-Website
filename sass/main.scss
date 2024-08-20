@@ -68,22 +68,18 @@ body {
 			left: 0;
 			height: 0;
 			width: 100%;
-			background-color: black;
+			background-color: $dark;
 			transition: height 0.5s ease;
 			z-index: -1;
 		}
 
 		&:hover,
 		&.is-active {
-			color: white;
+			color: $white;
 
 			&::after {
 				height: 100%;
 			}
-		}
-
-		.active {
-			background-color: yellow;
 		}
 	}
 }
@@ -131,7 +127,7 @@ body {
 }
 
 .section {
-	color: black;
+	color: $dark;
 	.about {
 		font-weight: 300;
 		&-heading {
@@ -222,8 +218,8 @@ body {
 			padding: 2em;
 			height: 370px;
 			border-radius: 8px;
-			border: solid #e0e0e0;
-			box-shadow: 3px 3px 7px 0px #e0e0e0;
+			border: solid $light-shadow;
+			box-shadow: 3px 3px 7px 0px $light-shadow;
 			transition: transform 0.3s ease;
 
 			&-title {
@@ -271,15 +267,15 @@ body {
 			margin-top: 1.2em;
 			padding: 0.7em 4.2em;
 			font-size: 1.5rem;
-			background-color: white;
-			border: solid #e0e0e0;
-			box-shadow: 3px 3px 7px 0px #e0e0e0;
+			background-color: $white;
+			border: solid $light-shadow;
+			box-shadow: 3px 3px 7px 0px $light-shadow;
 			border-radius: 5px;
 			cursor: pointer;
 		}
 
 		.offers__card-items--second .offers__card-btn {
-			background-color: #2bde71;
+			background-color: $green-cta;
 		}
 
 		&-full {
@@ -287,7 +283,7 @@ body {
 			text-transform: uppercase;
 			text-decoration: underline rgb(154, 111, 37);
 			cursor: pointer;
-			color: black;
+			color: $dark;
 		}
 	}
 }
@@ -296,8 +292,8 @@ body {
 
 .footer {
 	margin-top: 650px;
-	color: #333;
-	background-color: #f5f5f5;
+	color: $light-dark;
+	background-color: $light-grey;
 
 	.wrapper {
 		padding: 3em 2em 2em;
@@ -348,12 +344,12 @@ body {
 
 .contact {
 	padding: 4em 1em;
-	background-color: #f7f4f4;
+	background-color: $light-grey;
 
 	.section-title {
 		margin-bottom: 6.5rem;
 		text-transform: uppercase;
-		color: #333;
+		color: $light-dark;
 		font-weight: 300;
 		font-size: 3.5rem;
 		text-transform: uppercase;
@@ -366,8 +362,8 @@ body {
 	}
 
 	&__form-box {
-		border: solid #e0e0e0;
-		box-shadow: 3px 3px 7px 0px #e0e0e0;
+		border: solid $light-shadow;
+		box-shadow: 3px 3px 7px 0px $light-shadow;
 		color: black;
 
 		label {
@@ -397,7 +393,7 @@ body {
 			&:hover,
 			&:focus {
 				outline: none;
-				border: 0.5px solid #e0e0e0;
+				border: 0.5px solid $light-shadow;
 			}
 		}
 
@@ -423,7 +419,7 @@ body {
 		grid-column: 1/-1;
 		grid-row: 6/7;
 		font-size: 4rem;
-		color: green;
+		color: $green-hover;
 		display: none;
 	}
 
@@ -440,8 +436,8 @@ body {
 		&:hover,
 		&:focus {
 			outline: none;
-			color: #fff;
-			background-color: #414141;
+			color: $white;
+			background-color: $light-dark;
 		}
 	}
 }
@@ -449,7 +445,7 @@ body {
 .map {
 	font-size: 4rem;
 	font-weight: 300;
-	color: black;
+	color: $dark;
 	text-transform: uppercase;
 
 	&__box {
