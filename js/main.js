@@ -46,7 +46,6 @@ const handleScrollSpy = () => {
 			navItems.forEach(item => item.classList.remove('is-active'))
 			activeSection.classList.add('is-active')
 		}
-		
 	})
 
 	if (window.scrollY <= 20) {
@@ -55,15 +54,6 @@ const handleScrollSpy = () => {
 		firstSection.classList.add('is-active')
 	}
 }
-const handleFormSubmit = e => {
-	e.preventDefault()
-	form.reset()
-	successMessage.style.display = 'block'
-	setTimeout(() => {
-		successMessage.style.display = 'none'
-	}, 5000)
-}
 
 navBtn.addEventListener('click', handleNav)
 window.addEventListener('scroll', handleScrollSpy)
-form.addEventListener('submit', handleFormSubmit)
