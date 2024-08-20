@@ -548,7 +548,7 @@ body {
     margin-right: 0.3em;
   }
   .header {
-    background-image: url("/img/jungle-big.jpg");
+    background-image: url("../img/jungle-big.jpg");
   }
   .header__text {
     font-size: 3.2rem;
