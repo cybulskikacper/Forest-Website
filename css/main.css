@@ -175,7 +175,7 @@ body {
   font-weight: 600;
 }
 
-.check .adventure__box {
+.family .adventure__box {
   position: relative;
   background-image: url("../img/girl-small.jpg");
   background-size: cover;
@@ -188,7 +188,7 @@ body {
   justify-content: center;
   text-align: center;
 }
-.check .adventure__box::before {
+.family .adventure__box::before {
   content: "";
   position: absolute;
   top: 0;
@@ -198,7 +198,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
 }
-.check .adventure__title {
+.family .adventure__title {
   position: relative;
   z-index: 2;
   color: #fff;
@@ -617,16 +617,16 @@ body {
   .header__heading {
     font-size: 6.1rem;
   }
-  .check .adventure__box {
+  .family .adventure__box {
     background-image: url("../img/girl-big.jpg");
     padding: 7em 6em;
   }
 }
 @media (min-width: 1200px) {
-  .check .adventure__box {
+  .family .adventure__box {
     padding: 7em 6em;
   }
-  .check .adventure__title {
+  .family .adventure__title {
     font-size: 5.5rem;
     padding: 1em 3em;
   }
