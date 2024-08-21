@@ -630,6 +630,9 @@ body {
     font-size: 5.5rem;
     padding: 1em 3em;
   }
+  .offer-page .footer {
+    margin-top: 580px;
+  }
   .map__box iframe {
     width: 100%;
     height: 800px;
