@@ -177,7 +177,7 @@ body {
 
 .family .adventure__box {
   position: relative;
-  background-image: url("../img/girl-small.jpg");
+  background-image: url("/img/girl-small.jpg");
   background-size: cover;
   background-position: center;
   -o-object-fit: cover;
