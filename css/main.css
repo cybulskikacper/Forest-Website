@@ -14,8 +14,8 @@
   position: relative;
   margin-bottom: 0.5em;
   font-size: 3rem;
-  text-align: center;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .section-padding {
@@ -508,11 +508,11 @@ body {
     display: none;
   }
   .nav-desktop {
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -526,7 +526,7 @@ body {
     padding: 0.5em;
     font-size: 1.8rem;
     color: #000000;
-    -decoration: none;
+    text-decoration: none;
     transition: transform 0.3s;
   }
   .nav-desktop__item:hover {
@@ -628,8 +628,8 @@ body {
     padding: 7em 6em;
   }
   .family .adventure__title {
-    font-size: 5.5rem;
     padding: 1em 3em;
+    font-size: 5.5rem;
   }
   .offer-page .footer {
     margin-top: 580px;

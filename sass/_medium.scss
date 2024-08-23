@@ -69,11 +69,11 @@
 		}
 
 		&-desktop {
+			position: fixed;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			flex-direction: row;
-			position: fixed;
 			top: 0;
 			left: 0;
 			right: 0;
@@ -87,7 +87,7 @@
 				padding: 0.5em;
 				font-size: 1.8rem;
 				color: $dark;
-				-decoration: none;
+				text-decoration: none;
 				transition: transform 0.3s;
 
 				&:hover {
