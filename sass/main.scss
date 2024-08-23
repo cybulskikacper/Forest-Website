@@ -29,17 +29,17 @@ body {
 
 	&-mobile {
 		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-		transform: translateX(-102%);
-		background-color: $white;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 		z-index: 10;
+		background-color: $white;
+		transform: translateX(-102%);
 		transition: transform 0.2s ease-in-out;
 
 		&--active {
@@ -53,13 +53,12 @@ body {
 		display: block;
 		margin: 0.5em;
 		padding: 0.5em;
+		color: $dark;
+		z-index: 0;
 		font-size: 2.1rem;
 		text-decoration: none;
-		color: $dark;
 		text-transform: uppercase;
-		text-decoration: none;
 		transition: color 0.3s ease;
-		z-index: 0;
 
 		&::after {
 			content: '';
@@ -67,10 +66,10 @@ body {
 			bottom: 0;
 			left: 0;
 			height: 0;
+			z-index: -1;
 			width: 100%;
 			background-color: $dark;
 			transition: height 0.5s ease;
-			z-index: -1;
 		}
 
 		&:hover,
@@ -86,18 +85,18 @@ body {
 
 .header {
 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2em;
+	width: 100%;
+	height: 70vh;
+	color: #fff;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 	background-image: url('../img/jungle-small.webp');
 	background-size: cover;
 	background-position: center;
 	object-fit: cover;
-	color: #fff;
-	width: 100%;
-	height: 70vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-	padding: 2em;
 }
 
 .header::before {
@@ -113,17 +112,17 @@ body {
 
 .header__heading {
 	position: relative;
-	font-weight: 500;
 	font-size: 3rem;
+	font-weight: 500;
 	z-index: 2;
 }
 
 .header__text {
 	position: relative;
 	font-size: 2.4rem;
-	z-index: 2;
 	margin-bottom: 0.2em;
 	text-align: start;
+	z-index: 2;
 }
 
 .section {
@@ -161,15 +160,15 @@ body {
 	.adventure {
 		&__box {
 			position: relative;
-			background-image: url('/img/girl-small.webp');
-			background-size: cover;
-			background-position: center;
-			object-fit: cover;
-			padding: 2em 0.5em;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			text-align: center;
+			padding: 2em 0.5em;
+			background-image: url('/img/girl-small.webp');
+			background-size: cover;
+			background-position: center;
+			object-fit: cover;
 
 			&::before {
 				content: '';
@@ -185,34 +184,34 @@ body {
 
 		&__title {
 			position: relative;
-			z-index: 2;
-			color: $white;
+			padding: 0.7em 2em;
+			border: solid;
 			font-size: 3.5rem;
 			font-weight: 300;
-			border: solid;
-			padding: 0.7em 2em;
+			color: $white;
+			z-index: 2;
 		}
 	}
 }
 .offers {
 	.section-heading {
 		font-size: 3.5rem;
-		text-transform: uppercase;
 		font-weight: 400;
+		text-transform: uppercase;
 	}
 
 	.offer-text {
-		text-align: center;
 		font-size: 2rem;
+		text-align: center;
 	}
 
 	&__card {
 		display: flex;
 		flex-direction: column;
-		gap: 30px;
-		margin: 1em 0;
-		text-align: center;
 		height: 450px;
+		margin: 1em 0;
+		gap: 30px;
+		text-align: center;
 
 		&-items {
 			padding: 2em;
@@ -263,10 +262,10 @@ body {
 		}
 
 		&-btn {
-			font-weight: 300;
 			margin-top: 1.2em;
 			padding: 0.7em 4.2em;
 			font-size: 1.5rem;
+			font-weight: 300;
 			background-color: $white;
 			border: solid $light-shadow;
 			box-shadow: 3px 3px 7px 0px $light-shadow;
@@ -280,10 +279,10 @@ body {
 
 		&-full {
 			font-size: 2.7rem;
+			color: $dark;
 			text-transform: uppercase;
 			text-decoration: underline rgb(154, 111, 37);
 			cursor: pointer;
-			color: $dark;
 		}
 	}
 }
@@ -300,8 +299,8 @@ body {
 	}
 
 	&__box {
-		font-size: 1.4rem;
 		display: flex;
+		font-size: 1.4rem;
 	}
 
 	&__box-desktop {
@@ -322,9 +321,9 @@ body {
 	}
 
 	&__bottom-text {
-		text-align: center;
 		font-size: 1.3rem;
 		padding: 2rem;
+		text-align: center;
 	}
 
 	&__year {
@@ -348,11 +347,10 @@ body {
 
 	.section-title {
 		margin-bottom: 6.5rem;
-		text-transform: uppercase;
-		color: $light-dark;
 		font-weight: 300;
 		font-size: 3.5rem;
 		text-transform: uppercase;
+		color: $light-dark;
 	}
 
 	&__form {
@@ -364,14 +362,14 @@ body {
 	&__form-box {
 		border: solid $light-shadow;
 		box-shadow: 3px 3px 7px 0px $light-shadow;
-		color: black;
+		color: $dark;
 
 		label {
 			display: block;
-			text-align: left;
 			margin-left: 2rem;
 			margin-top: 3rem;
 			font-size: 2rem;
+			text-align: left;
 		}
 
 		textarea {
@@ -382,14 +380,13 @@ body {
 
 		input,
 		textarea {
-			padding: 1em 1em;
-			margin-bottom: 2em;
 			width: 100%;
-			color: black;
+			padding: 1em 1em;
 			font-size: 2rem;
-			background: none;
+			margin-bottom: 2em;
+			color: black;
 			border: 1px solid rgba(255, 255, 255, 0.1);
-
+			background: none;
 			&:hover,
 			&:focus {
 				outline: none;
@@ -416,11 +413,11 @@ body {
 	}
 
 	&__form-success {
+		display: none;
 		grid-column: 1/-1;
 		grid-row: 6/7;
 		font-size: 4rem;
 		color: $green-hover;
-		display: none;
 	}
 
 	&__form-btn {
@@ -428,11 +425,10 @@ body {
 		grid-row: 5/6;
 		padding: 1em;
 		border: 1px solid;
-		background: none;
 		font-weight: bold;
-		cursor: pointer;
 		transition: background-color 0.3s, color 0.3s;
-
+		background: none;
+		cursor: pointer;
 		&:hover,
 		&:focus {
 			outline: none;
