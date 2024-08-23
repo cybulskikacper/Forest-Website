@@ -135,13 +135,13 @@ body {
 .header__heading {
   position: relative;
   font-weight: 500;
-  font-size: 3.5rem;
+  font-size: 3rem;
   z-index: 2;
 }
 
 .header__text {
   position: relative;
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   z-index: 2;
   margin-bottom: 0.2em;
   text-align: start;
@@ -553,6 +553,9 @@ body {
   .header__text {
     font-size: 3.2rem;
   }
+  .header__heading {
+    font-size: 4.5rem;
+  }
   .offers__card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -612,10 +615,10 @@ body {
     font-size: 2.5rem;
   }
   .header__text {
-    font-size: 4.5rem;
+    font-size: 4.2rem;
   }
   .header__heading {
-    font-size: 6.1rem;
+    font-size: 5rem;
   }
   .family .adventure__box {
     background-image: url("../img/girl-big.jpg");
