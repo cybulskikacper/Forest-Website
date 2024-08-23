@@ -106,7 +106,7 @@ body {
 
 .header {
   position: relative;
-  background-image: url("../img/jungle-small.jpg");
+  background-image: url("../img/jungle-small.webp");
   background-size: cover;
   background-position: center;
   -o-object-fit: cover;
@@ -177,7 +177,7 @@ body {
 
 .family .adventure__box {
   position: relative;
-  background-image: url("/img/girl-small.jpg");
+  background-image: url("/img/girl-small.webp");
   background-size: cover;
   background-position: center;
   -o-object-fit: cover;
@@ -548,7 +548,7 @@ body {
     margin-right: 0.3em;
   }
   .header {
-    background-image: url("../img/jungle-big.jpg");
+    background-image: url("../img/jungle-big.webp");
   }
   .header__text {
     font-size: 3.2rem;
@@ -621,7 +621,7 @@ body {
     font-size: 5rem;
   }
   .family .adventure__box {
-    background-image: url("../img/girl-big.jpg");
+    background-image: url("../img/girl-big.webp");
     padding: 7em 6em;
   }
 }
