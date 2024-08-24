@@ -443,7 +443,10 @@ body {
     padding: 10em;
   }
   .header__text {
-    font-size: 2rem;
+    font-size: 3rem;
+  }
+  .header__heading {
+    font-size: 4rem;
   }
   .section .about__box {
     flex-direction: row;
